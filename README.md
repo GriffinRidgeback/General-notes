@@ -18,3 +18,35 @@ sudo ln -s $(/usr/libexec/java_home)/jre/lib/server/libjvm.dylib /usr/local/lib
 sudo R CMD javareconf -n
 install.packages("rJava",type='source')
 ```
+
+This is also an option:
+
+* in your ~/.profile or ~/.bashrc add this line: 
+
+```
+export JAVA_HOME=`/usr/libexec/java_home`
+```
+
+* From a terminal:
+
+```
+source .profile (or % source .bashrc)
+sudo ln -s $(/usr/libexec/java_home)/jre/lib/server/libjvm.dylib /usr/local/lib
+```
+
+* In RStudio: 
+```
+remove.packages(rJava)
+remove.packages(Rweka)
+```
+
+* From the terminal:
+
+```sudo R CMD javareconf```
+
+* In RStudio: 
+```
+install.packages("rJava")
+install.packages("rJava")
+```
+* Load your library("rJava", "RWeka")
