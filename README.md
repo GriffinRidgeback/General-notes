@@ -47,6 +47,6 @@ remove.packages(Rweka)
 * In RStudio: 
 ```
 install.packages("rJava")
-install.packages("rJava")
+install.packages("RWeka")
 ```
 * Load your library("rJava", "RWeka")
